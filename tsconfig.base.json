@@ -39,6 +39,9 @@
       "@gotham-city-chronicles-companion/poison-ivy-new-52": [
         "libs/poison-ivy-new-52/src/index.ts"
       ],
+      "@gotham-city-chronicles-companion/prof-pyg-gang": [
+        "libs/prof-pyg-gang/src/index.ts"
+      ],
       "@gotham-city-chronicles-companion/skills": ["libs/skills/src/index.ts"]
     },
     "rootDir": ".",
