@@ -16,6 +16,9 @@
       "@gotham-city-chronicles-companion/artwork": [
         "libs/artwork/src/index.ts"
       ],
+      "@gotham-city-chronicles-companion/batman-inc": [
+        "libs/batman-inc/src/index.ts"
+      ],
       "@gotham-city-chronicles-companion/common": ["libs/common/src/index.ts"],
       "@gotham-city-chronicles-companion/skills": ["libs/skills/src/index.ts"]
     },
