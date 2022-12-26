@@ -27,6 +27,9 @@
       ],
       "@gotham-city-chronicles-companion/common": ["libs/common/src/index.ts"],
       "@gotham-city-chronicles-companion/extras": ["libs/extras/src/index.ts"],
+      "@gotham-city-chronicles-companion/five-player": [
+        "libs/five-player/src/index.ts"
+      ],
       "@gotham-city-chronicles-companion/skills": ["libs/skills/src/index.ts"]
     },
     "rootDir": ".",
