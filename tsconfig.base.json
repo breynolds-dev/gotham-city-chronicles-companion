@@ -19,6 +19,9 @@
       "@gotham-city-chronicles-companion/batman-inc": [
         "libs/batman-inc/src/index.ts"
       ],
+      "@gotham-city-chronicles-companion/batman-new-52": [
+        "libs/batman-new-52/src/index.ts"
+      ],
       "@gotham-city-chronicles-companion/common": ["libs/common/src/index.ts"],
       "@gotham-city-chronicles-companion/skills": ["libs/skills/src/index.ts"]
     },
