@@ -49,6 +49,9 @@
       "@gotham-city-chronicles-companion/versus": ["libs/versus/src/index.ts"],
       "@gotham-city-chronicles-companion/villain-campaign": [
         "libs/villain-campaign/src/index.ts"
+      ],
+      "@gotham-city-chronicles-companion/wayne-manor": [
+        "libs/wayne-manor/src/index.ts"
       ]
     },
     "rootDir": ".",
