@@ -46,7 +46,10 @@
       "@gotham-city-chronicles-companion/suicide-squad": [
         "libs/suicide-squad/src/index.ts"
       ],
-      "@gotham-city-chronicles-companion/versus": ["libs/versus/src/index.ts"]
+      "@gotham-city-chronicles-companion/versus": ["libs/versus/src/index.ts"],
+      "@gotham-city-chronicles-companion/villain-campaign": [
+        "libs/villain-campaign/src/index.ts"
+      ]
     },
     "rootDir": ".",
     "skipDefaultLibCheck": true,
