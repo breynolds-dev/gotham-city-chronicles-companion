@@ -1,0 +1,18 @@
+{
+  "name": "gotham-city-chronicles-companion",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@nrwl/expo": "^15.4.1",
+    "@nrwl/nx-cloud": "latest",
+    "@nrwl/workspace": "15.4.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-universe": "^11.1.1",
+    "eslint-plugin-typescript-sort-keys": "^2.1.0",
+    "nx": "15.4.1",
+    "prettier": "^2.6.2",
+    "typescript": "~4.8.2"
+  },
+  "packageManager": "yarn@3.3.1"
+}

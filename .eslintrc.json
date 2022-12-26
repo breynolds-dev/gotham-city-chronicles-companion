@@ -1,0 +1,72 @@
+{
+  "root": true,
+  "extends": [
+    "universe/node",
+    "plugin:prettier/recommended"
+  ],
+  "ignorePatterns": [
+    "**/*"
+  ],
+  "plugins": [
+    "@nrwl/nx",
+    "prettier"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx",
+        "*.js",
+        "*.jsx"
+      ],
+      "rules": {
+        "prettier/prettier": "error",
+        "@nrwl/nx/enforce-module-boundaries": [
+          "error",
+          {
+            "enforceBuildableLibDependency": true,
+            "allow": [],
+            "depConstraints": [
+              {
+                "sourceTag": "*",
+                "onlyDependOnLibsWithTags": ["*"]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "extends": [
+        "plugin:@nrwl/nx/typescript",
+        "universe/shared/typescript-analysis",
+        "plugin:typescript-sort-keys/recommended"
+      ],
+      "parserOptions": {
+        "project": ["./tsconfig.*?.json"]
+      },
+      "plugins": [
+        "typescript-sort-keys"
+      ],
+      "rules": {
+        "prettier/prettier": "error"
+      }
+    },
+    {
+      "files": [
+        "*.js",
+        "*.jsx"
+      ],
+      "extends": [
+        "plugin:@nrwl/nx/javascript"
+      ],
+      "rules": {
+        "prettier/prettier": "error"
+      }
+    }
+  ]
+}
