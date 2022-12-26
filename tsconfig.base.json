@@ -42,7 +42,10 @@
       "@gotham-city-chronicles-companion/prof-pyg-gang": [
         "libs/prof-pyg-gang/src/index.ts"
       ],
-      "@gotham-city-chronicles-companion/skills": ["libs/skills/src/index.ts"]
+      "@gotham-city-chronicles-companion/skills": ["libs/skills/src/index.ts"],
+      "@gotham-city-chronicles-companion/suicide-squad": [
+        "libs/suicide-squad/src/index.ts"
+      ]
     },
     "rootDir": ".",
     "skipDefaultLibCheck": true,
