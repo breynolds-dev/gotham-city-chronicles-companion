@@ -1,1 +1,1 @@
-export * from "./lib/skills";
+export * as skills from "./skills/index";
