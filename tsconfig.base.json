@@ -33,6 +33,9 @@
       "@gotham-city-chronicles-companion/league-of-assassins": [
         "libs/league-of-assassins/src/index.ts"
       ],
+      "@gotham-city-chronicles-companion/narrows-chronicles": [
+        "libs/narrows-chronicles/src/index.ts"
+      ],
       "@gotham-city-chronicles-companion/skills": ["libs/skills/src/index.ts"]
     },
     "rootDir": ".",
