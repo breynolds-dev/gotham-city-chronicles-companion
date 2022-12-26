@@ -30,6 +30,9 @@
       "@gotham-city-chronicles-companion/five-player": [
         "libs/five-player/src/index.ts"
       ],
+      "@gotham-city-chronicles-companion/league-of-assassins": [
+        "libs/league-of-assassins/src/index.ts"
+      ],
       "@gotham-city-chronicles-companion/skills": ["libs/skills/src/index.ts"]
     },
     "rootDir": ".",
