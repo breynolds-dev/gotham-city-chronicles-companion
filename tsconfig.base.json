@@ -10,6 +10,9 @@
     "module": "esnext",
     "moduleResolution": "node",
     "paths": {
+      "@gotham-city-chronicles-companion/arkham-asylum": [
+        "libs/arkham-asylum/src/index.ts"
+      ],
       "@gotham-city-chronicles-companion/common": ["libs/common/src/index.ts"],
       "@gotham-city-chronicles-companion/skills": ["libs/skills/src/index.ts"]
     },
