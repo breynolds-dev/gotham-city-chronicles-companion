@@ -5,14 +5,28 @@
   "private": true,
   "devDependencies": {
     "@nrwl/expo": "^15.4.1",
+    "@nrwl/jest": "15.4.1",
     "@nrwl/nx-cloud": "latest",
     "@nrwl/workspace": "15.4.1",
+    "@swc/cli": "~0.1.55",
+    "@swc/core": "^1.2.173",
+    "@swc/jest": "0.2.20",
+    "@types/jest": "28.1.1",
+    "@types/node": "16.11.7",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-universe": "^11.1.1",
     "eslint-plugin-typescript-sort-keys": "^2.1.0",
+    "jest": "28.1.1",
+    "jest-environment-jsdom": "28.1.1",
     "nx": "15.4.1",
     "prettier": "^2.6.2",
+    "ts-jest": "28.0.5",
+    "ts-node": "10.9.1",
     "typescript": "~4.8.2"
   },
-  "packageManager": "yarn@3.3.1"
+  "packageManager": "yarn@3.3.1",
+  "dependencies": {
+    "@swc/helpers": "~0.4.11",
+    "tslib": "^2.3.0"
+  }
 }
