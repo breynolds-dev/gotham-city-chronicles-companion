@@ -26,6 +26,7 @@
         "libs/batmobile/src/index.ts"
       ],
       "@gotham-city-chronicles-companion/common": ["libs/common/src/index.ts"],
+      "@gotham-city-chronicles-companion/core": ["libs/core/src/index.ts"],
       "@gotham-city-chronicles-companion/extras": ["libs/extras/src/index.ts"],
       "@gotham-city-chronicles-companion/five-player": [
         "libs/five-player/src/index.ts"
