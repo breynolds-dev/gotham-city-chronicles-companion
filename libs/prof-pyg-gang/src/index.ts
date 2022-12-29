@@ -1,1 +1,2 @@
-export * from "./lib/prof-pyg-gang";
+export * as dashboards from "./dashboards";
+export * as tiles from "./tiles";
