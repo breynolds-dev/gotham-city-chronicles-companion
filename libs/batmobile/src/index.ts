@@ -1,1 +1,2 @@
-export * from "./lib/batmobile";
+export * from "./dashboards";
+export * from "./types";
