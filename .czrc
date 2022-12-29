@@ -1,16 +1,15 @@
 {
-  "path": "./node_modules/commitizen-emoji",
   "config": {
     "commitizenEmoji": {
       "conventionalFormat": true,
-      "issuesPrefix": "https://app.shortcut.com/equipmentshare/story/",
+      "issuesPrefix": "https://github.com/breynolds-dev/gotham-city-chronicles-companion/issues/",
       "questions": {
-        "type": "Select the type of change you're committing:",
-        "scope": "Specify a scope:",
-        "subject": "Provide a commit title:",
         "body": "Provide a commit description:",
         "breakingBody": "Specify key features of a BREAKING CHANGE:",
-        "issues": "Story ID from Shortcut (top right of story or numbers after SC-)"
+        "issues": "Issue ID",
+        "scope": "Specify a scope:",
+        "subject": "Provide a commit title:",
+        "type": "Select the type of change you're committing:"
       },
       "replaceTypes": true,
       "skipQuestions": [
@@ -20,72 +19,73 @@
       "symbols": false,
       "types": [
         {
-          "emoji": "✨",
           "code": ":sparkles:",
           "description": "Introduce new features.",
+          "emoji": "✨",
           "name": "feat"
         },
         {
-          "emoji": "🐛",
           "code": ":bug:",
           "description": "Fix a bug.",
+          "emoji": "🐛",
           "name": "fix"
         },
         {
-          "emoji": "⚡️",
           "code": ":zap:",
           "description": "A performance improvement on any part of the application.",
+          "emoji": "⚡️",
           "name": "perf"
         },
         {
-          "emoji": "♻️",
           "code": ":recycle:",
           "description": "Refactoring any component or file.",
+          "emoji": "♻️",
           "name": "refactor"
         },
         {
-          "emoji": "🎨",
           "code": ":art:",
           "description": "Add or update the UI and style files.",
+          "emoji": "🎨",
           "name": "style"
         },
         {
-          "emoji": "📝",
           "code": ":memo:",
           "description": "Add or update documentation.",
+          "emoji": "📝",
           "name": "docs"
         },
         {
-          "emoji": "🏗️",
           "code": ":building_construction:",
           "description": "Build system or architectural changes.",
+          "emoji": "🏗️",
           "name": "build"
         },
         {
-          "emoji": "⏪️",
           "code": ":rewind:",
           "description": "Reverts previous changes",
+          "emoji": "⏪️",
           "name": "revert"
         },
         {
-          "emoji": "⚗️",
           "code": ":alembic:",
           "description": "Testing improved with new or fixed tests. (DOES NOT BUMP VERSION OR TRIGGER NEW RELEASE)",
+          "emoji": "⚗️",
           "name": "test"
         },
         {
-          "emoji": "👷",
           "code": ":construction_worker:",
           "description": "CI config files and scripts. (DOES NOT BUMP VERSION OR TRIGGER NEW RELEASE)",
+          "emoji": "👷",
           "name": "ci"
         },
         {
-          "emoji": "🔨",
           "code": ":hammer:",
           "description": "Changes that don't fit into other categories. (DOES NOT BUMP VERSION OR TRIGGER NEW RELEASE)",
+          "emoji": "🔨",
           "name": "chore"
         }
       ]
     }
-  }
+  },
+  "path": "./node_modules/commitizen-emoji"
 }
