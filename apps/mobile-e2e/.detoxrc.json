@@ -1,0 +1,94 @@
+{
+  "apps": {
+    "android.debug": {
+      "binaryPath": "../../apps/mobile/android/app/build/outputs/apk/debug/app-debug.apk",
+      "build": "cd ../../apps/mobile/android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug",
+      "type": "android.apk"
+    },
+    "android.eas": {
+      "binaryPath": "../../apps/mobile/dist/GothamCityChroniclesCompanion.apk",
+      "build": "yarn exec nx run mobile:download --platform android --output=apps/mobile/dist/",
+      "type": "ios.app"
+    },
+    "android.local": {
+      "binaryPath": "../../apps/mobile/dist/GothamCityChroniclesCompanion.apk",
+      "build": "yarn exec nx run mobile:build --platform android --profile preview --wait --local --no-interactive --output=apps/mobile/dist/",
+      "type": "ios.app"
+    },
+    "android.release": {
+      "binaryPath": "../../apps/mobile/android/app/build/outputs/apk/release/app-release.apk",
+      "build": "cd ../../apps/mobile/android && ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release",
+      "type": "android.apk"
+    },
+    "ios.debug": {
+      "binaryPath": "../../apps/mobile/ios/build/Build/Products/Debug-iphonesimulator/GothamCityChroniclesCompanion.app",
+      "build": "cd ../../apps/mobile/ios && xcodebuild -workspace GothamCityChroniclesCompanion.xcworkspace -scheme GothamCityChroniclesCompanion -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13' -derivedDataPath ./build -quiet",
+      "type": "ios.app"
+    },
+    "ios.eas": {
+      "binaryPath": "../../apps/mobile/dist/GothamCityChroniclesCompanion.app",
+      "build": "yarn exec nx run mobile:download --platform ios --distribution simulator --output=apps/mobile/dist/",
+      "type": "ios.app"
+    },
+    "ios.local": {
+      "binaryPath": "../../apps/mobile/dist/GothamCityChroniclesCompanion.app",
+      "build": "yarn exec nx run mobile:build --platform ios --profile preview --wait --local --no-interactive --output=apps/mobile/dist/",
+      "type": "ios.app"
+    },
+    "ios.release": {
+      "binaryPath": "../../apps/mobile/ios/build/Build/Products/Release-iphonesimulator/GothamCityChroniclesCompanion.app",
+      "build": "cd ../../apps/mobile/ios && xcodebuild -workspace GothamCityChroniclesCompanion.xcworkspace -scheme GothamCityChroniclesCompanion -configuration Release -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13' -derivedDataPath ./build -quiet",
+      "type": "ios.app"
+    }
+  },
+  "configurations": {
+    "android.emu.debug": {
+      "app": "android.debug",
+      "device": "emulator"
+    },
+    "android.emu.eas": {
+      "app": "android.eas",
+      "device": "simulator"
+    },
+    "android.emu.local": {
+      "app": "android.local",
+      "device": "simulator"
+    },
+    "android.emu.release": {
+      "app": "android.release",
+      "device": "emulator"
+    },
+    "ios.sim.debug": {
+      "app": "ios.debug",
+      "device": "simulator"
+    },
+    "ios.sim.eas": {
+      "app": "ios.eas",
+      "device": "simulator"
+    },
+    "ios.sim.local": {
+      "app": "ios.local",
+      "device": "simulator"
+    },
+    "ios.sim.release": {
+      "app": "ios.release",
+      "device": "simulator"
+    }
+  },
+  "devices": {
+    "emulator": {
+      "device": {
+        "avdName": "Pixel_4a_API_30"
+      },
+      "type": "android.emulator"
+    },
+    "simulator": {
+      "device": {
+        "type": "iPhone 13"
+      },
+      "type": "ios.simulator"
+    }
+  },
+  "runnerConfig": "jest.config.json",
+  "testRunner": "jest"
+}
