@@ -1,1 +1,2 @@
-export * from "./lib/batman-new-52";
+export * as dashboards from "./dashboards";
+export * as tiles from "./tiles";
