@@ -3,7 +3,9 @@
     "@testing-library/jest-native": "*",
     "@testing-library/react-native": "*",
     "expo": "*",
+    "native-base": "*",
     "react-native": "*",
+    "react-native-safe-area-context": "*",
     "react-native-svg": "*",
     "react-native-web": "*"
   },
