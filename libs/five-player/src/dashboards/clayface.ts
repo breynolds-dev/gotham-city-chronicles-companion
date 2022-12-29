@@ -1,6 +1,10 @@
-import { DIE_COLOR, ENTITY_TYPE, Dashboard } from "@gotham-city-companion/common";
-import { skills } from "@gotham-city-companion/skills";
-import { dashboards } from "@gotham-city-companion/artwork";
+import { dashboards } from "@gotham-city-chronicles-companion/artwork";
+import {
+  DIE_COLOR,
+  ENTITY_TYPE,
+  Dashboard
+} from "@gotham-city-chronicles-companion/common";
+import { skills } from "@gotham-city-chronicles-companion/skills";
 
 const name = "Clayface";
 
@@ -11,7 +15,7 @@ export const clayface: Dashboard = {
   name,
   subtext: "Detective Comics",
   description: [
-    "Few would have guessed that Clayface would become an ally to Batman and other heroes of Gotham City.  After a struggle with amnesia Basil Karlo awoke from the spell, became aware of his criminal past, and decided to aid Batwoman.  After Karlo proved himself worthy of redemption, Batman and Batwoman offered him to join their ranks and become a hero, but Basil faced a dilemma.  In his human form, he was slowly dying, while in the form of Clayface he was going insane.  This made Clayface an unstable yet powerful ally.",
+    "Few would have guessed that Clayface would become an ally to Batman and other heroes of Gotham City.  After a struggle with amnesia Basil Karlo awoke from the spell, became aware of his criminal past, and decided to aid Batwoman.  After Karlo proved himself worthy of redemption, Batman and Batwoman offered him to join their ranks and become a hero, but Basil faced a dilemma.  In his human form, he was slowly dying, while in the form of Clayface he was going insane.  This made Clayface an unstable yet powerful ally."
   ],
   artwork: dashboards.batgirl,
   size: "Variable",
@@ -19,20 +23,18 @@ export const clayface: Dashboard = {
   totalEnergy: 11,
   recoveryValues: {
     active: 2,
-    resting: 6,
+    resting: 6
   },
   sizeIndex: 2,
   menaceIndex: 1,
   automaticDefense: {
     dieColor: DIE_COLOR.YELLOW,
-    reroll: false,
+    reroll: false
   },
-  traits: [
-    skills.moralCode( { name } ),
-  ],
+  traits: [skills.moralCode({ name })],
   skills: [
-    skills.regeneration( { isHero: true, level: 1, name } ),
-    skills.sacrifice( { name, successesCount: 2 } ),
+    skills.regeneration({ isHero: true, level: 1, name }),
+    skills.sacrifice({ name, successesCount: 2 })
   ],
   batGadgets: 0,
   movement: {
@@ -40,53 +42,49 @@ export const clayface: Dashboard = {
     encumbrance: [
       {
         level: 6,
-        bonus: 1,
+        bonus: 1
       },
       {
         level: 7,
-        bonus: 0,
-      },
+        bonus: 0
+      }
     ],
     max: 4,
-    skills: [
-      skills.wallBreaker( { name, wallLevel: 1 } ),
-    ],
+    skills: [skills.wallBreaker({ name, wallLevel: 1 })]
   },
   melee: {
     dieColor: DIE_COLOR.RED,
     reroll: true,
     max: 5,
     skills: [
-      skills.berserk( { name, whiteDice: 2 } ),
-      skills.circularStrike( { additionalTargets: 2, name } ),
-      skills.reach( { automaticSuccess: 1, name } ),
-    ],
+      skills.berserk({ name, whiteDice: 2 }),
+      skills.circularStrike({ additionalTargets: 2, name }),
+      skills.reach({ automaticSuccess: 1, name })
+    ]
   },
   ranged: {
     dieColor: DIE_COLOR.YELLOW,
     reroll: false,
     max: 2,
-    skills: [],
+    skills: []
   },
   manipulation: {
     dieColor: DIE_COLOR.ORANGE,
     reroll: false,
     max: 5,
-    skills: [
-      skills.attraction( { distance: 1, name } ),
-    ],
+    skills: [skills.attraction({ distance: 1, name })]
   },
   thought: {
     dieColor: DIE_COLOR.YELLOW,
     reroll: false,
     max: 4,
-    skills: [],
+    skills: []
   },
   defense: {
     dieColor: DIE_COLOR.ORANGE,
     reroll: false,
     max: 4,
-    skills: [],
+    skills: []
   },
-  maxRerolls: 2,
+  maxRerolls: 2
 };
