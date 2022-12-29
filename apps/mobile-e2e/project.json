@@ -1,0 +1,99 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "implicitDependencies": [
+    "mobile"
+  ],
+  "name": "mobile-e2e",
+  "projectType": "application",
+  "sourceRoot": "apps/mobile-e2e/src",
+  "tags": [],
+  "targets": {
+    "build-android": {
+      "configurations": {
+        "bare": {
+          "detoxConfiguration": "android.emu.debug"
+        },
+        "local": {
+          "detoxConfiguration": "android.emu.local"
+        },
+        "production": {
+          "detoxConfiguration": "android.emu.release"
+        }
+      },
+      "executor": "@nrwl/detox:build",
+      "options": {
+        "detoxConfiguration": "android.emu.debug"
+      }
+    },
+    "build-ios": {
+      "configurations": {
+        "bare": {
+          "detoxConfiguration": "ios.sim.debug"
+        },
+        "local": {
+          "detoxConfiguration": "ios.sim.local"
+        },
+        "production": {
+          "detoxConfiguration": "ios.sim.release"
+        }
+      },
+      "executor": "@nrwl/detox:build",
+      "options": {
+        "detoxConfiguration": "ios.sim.debug"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/mobile-e2e/**/*.{ts,tsx,js,jsx}"
+        ]
+      },
+      "outputs": [
+        "{options.outputFile}"
+      ]
+    },
+    "test-android": {
+      "configurations": {
+        "bare": {
+          "buildTarget": "mobile-e2e:build-ios:bare",
+          "detoxConfiguration": "android.emu.debug"
+        },
+        "local": {
+          "buildTarget": "mobile-e2e:build-ios:local",
+          "detoxConfiguration": "android.emu.local"
+        },
+        "production": {
+          "buildTarget": "mobile-e2e:build-ios:production",
+          "detoxConfiguration": "android.emu.release"
+        }
+      },
+      "executor": "@nrwl/detox:test",
+      "options": {
+        "buildTarget": "mobile-e2e:build-ios",
+        "detoxConfiguration": "android.emu.eas"
+      }
+    },
+    "test-ios": {
+      "configurations": {
+        "bare": {
+          "buildTarget": "mobile-e2e:build-ios:bare",
+          "detoxConfiguration": "ios.sim.debug"
+        },
+        "local": {
+          "buildTarget": "mobile-e2e:build-ios:local",
+          "detoxConfiguration": "ios.sim.local"
+        },
+        "production": {
+          "buildTarget": "mobile-e2e:build-ios:production",
+          "detoxConfiguration": "ios.sim.release"
+        }
+      },
+      "executor": "@nrwl/detox:test",
+      "options": {
+        "buildTarget": "mobile-e2e:build-ios",
+        "detoxConfiguration": "ios.sim.eas"
+      }
+    }
+  }
+}
