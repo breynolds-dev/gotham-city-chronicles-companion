@@ -1,1 +1,2 @@
-export * from "./lib/wayne-manor";
+export * as dashboards from "./dashboards";
+export * as tiles from "./tiles";
